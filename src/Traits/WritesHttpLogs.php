@@ -10,6 +10,8 @@ trait WritesHttpLogs
 {
     use RemovesUnwantedParams;
 
+    private $enableLogging = true;
+
     /**
      * Write HTTP log to the database
      *
@@ -20,7 +22,7 @@ trait WritesHttpLogs
      */
     final protected function log($method, $endpoint, $params, ResponseInterface $response)
     {
-        if (!Config::get('laravel-http-request-api-log::config.enabled', true)) {
+        if (!($this->enableLogging && Config::get('laravel-http-request-api-log::config.enabled', true))) {
             return;
         }
 
