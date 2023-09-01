@@ -1,0 +1,26 @@
+{
+    "name": "sarahman/laravel-http-request-api-log",
+    "description": "This library stores the http request api log into a database table.",
+    "keywords": ["http", "api", "request", "log", "framework", "laravel", "lumen"],
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Syed Abidur Rahman",
+            "email": "aabid048@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sarahman\\HttpRequestApiLog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
