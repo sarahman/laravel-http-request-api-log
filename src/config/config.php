@@ -2,6 +2,11 @@
 
 return [
     /*
+     * If set to false, no api log will be saved to the database.
+     */
+    'enabled' => true,
+
+    /*
      * This model will be used to log activity.
      * It should extend Illuminate\Database\Eloquent\Model.
      */

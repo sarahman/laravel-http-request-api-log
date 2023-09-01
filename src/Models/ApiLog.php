@@ -34,4 +34,21 @@ class ApiLog extends Model
 
         parent::__construct($attributes);
     }
+
+    /**
+     * @inheritDoc
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        self::creating(function (self $model) {
+            $model->method = strtoupper($model->method);
+            $model->params = json_encode($model->params);
+        });
+
+        self::saving(function (self $model) {
+            $model->response = (string) json_encode($model->response);
+        });
+    }
 }
