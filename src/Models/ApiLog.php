@@ -46,9 +46,5 @@ class ApiLog extends Model
             $model->method = strtoupper($model->method);
             $model->params = json_encode($model->params);
         });
-
-        self::saving(function (self $model) {
-            $model->response = (string) json_encode($model->response);
-        });
     }
 }
