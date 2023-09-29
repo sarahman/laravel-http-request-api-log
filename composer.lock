@@ -4,55 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7872d5b38063d2d91ae6792d75749138",
+    "content-hash": "d6cc4c600799578972a452bd1cf89227",
     "packages": [
-        {
-            "name": "illuminate/config",
-            "version": "v4.2.17",
-            "target-dir": "Illuminate/Config",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/config.git",
-                "reference": "24b9e07a7c0245eb25574688bef49f873b904385"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/config/zipball/24b9e07a7c0245eb25574688bef49f873b904385",
-                "reference": "24b9e07a7c0245eb25574688bef49f873b904385",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/filesystem": "4.2.*",
-                "illuminate/support": "4.2.*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Illuminate\\Config": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/illuminate/config/issues",
-                "source": "https://github.com/illuminate/config/tree/4.2"
-            },
-            "time": "2014-11-15T19:22:33+00:00"
-        },
         {
             "name": "illuminate/container",
             "version": "v4.2.17",
@@ -203,52 +156,6 @@
                 "source": "https://github.com/illuminate/events/tree/4.2"
             },
             "time": "2014-10-02T19:49:50+00:00"
-        },
-        {
-            "name": "illuminate/filesystem",
-            "version": "v4.2.17",
-            "target-dir": "Illuminate/Filesystem",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "9127fb58eb6b721d98d2f7077df6cb8004da24c0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/9127fb58eb6b721d98d2f7077df6cb8004da24c0",
-                "reference": "9127fb58eb6b721d98d2f7077df6cb8004da24c0",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.2.*",
-                "php": ">=5.4.0",
-                "symfony/finder": "2.5.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Illuminate\\Filesystem": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/illuminate/filesystem/tree/4.2"
-            },
-            "time": "2014-12-29T18:11:33+00:00"
         },
         {
             "name": "illuminate/support",
@@ -481,56 +388,6 @@
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
             "time": "2016-08-06T14:39:51+00:00"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "v2.5.12",
-            "target-dir": "Symfony/Component/Finder",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Finder.git",
-                "reference": "e527ebf47ff912a45e148b7d0b107b80ec0b3cc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/e527ebf47ff912a45e148b7d0b107b80ec0b3cc2",
-                "reference": "e527ebf47ff912a45e148b7d0b107b80ec0b3cc2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Finder\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/Finder/tree/v2.5.11"
-            },
-            "time": "2015-01-03T08:01:13+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
