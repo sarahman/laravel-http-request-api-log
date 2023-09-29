@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sarahman/laravel-http-request-api-log.svg?style=flat-square)](https://packagist.org/packages/sarahman/laravel-http-request-api-log)
 [![Build Status](https://img.shields.io/travis/sarahman/laravel-http-request-api-log/master.svg?style=flat-square)](https://travis-ci.org/sarahman/laravel-http-request-api-log)
-[![Quality Score](https://img.shields.io/scrutinizer/g/sarahman/laravel-http-request-api-log.svg?style=flat-square)](https://scrutinizer-ci.com/g/sarahman/laravel-http-request-api-log)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sarahman/laravel-http-request-api-log/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sarahman/laravel-http-request-api-log/?branch=master)
 [![StyleCI](https://styleci.io/repos/686139900/shield)](https://styleci.io/repos/686139900)
 [![Total Downloads](https://img.shields.io/packagist/dt/sarahman/laravel-http-request-api-log.svg?style=flat-square)](https://packagist.org/packages/sarahman/laravel-http-request-api-log)
 

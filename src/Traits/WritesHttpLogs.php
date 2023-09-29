@@ -26,6 +26,8 @@ trait WritesHttpLogs
             return;
         }
 
+        $params = (array) $params;
+
         ApiLog::create([
             'client'        => class_basename($this),
             'method'        => $method,
