@@ -13,11 +13,11 @@ trait WritesHttpLogs
     private $enableLogging = true;
 
     /**
-     * Write HTTP log to the database
+     * Write HTTP log to the database.
      *
-     * @param string $method Name of the method
-     * @param string $endpoint Name of the endpoint
-     * @param array|null $params Request parameters
+     * @param string            $method   Name of the method
+     * @param string            $endpoint Name of the endpoint
+     * @param array|null        $params   Request parameters
      * @param ResponseInterface $response Response received
      */
     final protected function log($method, $endpoint, $params, ResponseInterface $response)
@@ -27,12 +27,12 @@ trait WritesHttpLogs
         }
 
         ApiLog::create([
-            'client' => class_basename($this),
-            'method' => $method,
-            'endpoint' => $endpoint,
-            'params' => $this->removeUnwantedParams($params),
+            'client'        => class_basename($this),
+            'method'        => $method,
+            'endpoint'      => $endpoint,
+            'params'        => $this->removeUnwantedParams($params),
             'response_code' => $response->getStatusCode(),
-            'response' => (string) $response->getBody(),
+            'response'      => (string) $response->getBody(),
         ]);
     }
 }

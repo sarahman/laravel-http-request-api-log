@@ -16,6 +16,6 @@ class HttpRequestApiLogServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        //
     }
 }

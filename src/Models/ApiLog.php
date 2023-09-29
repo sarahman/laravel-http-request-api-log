@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 
 /**
- * Sarahman\HttpRequestApiLog\Models\ApiLog
+ * This model deals with Http API calls logging.
  *
- * @property int $id
- * @property string $client
- * @property string $method
- * @property string $endpoint
- * @property string $params
- * @property int|null $response_code
- * @property string|null $response
+ * @property int                 $id
+ * @property string              $client
+ * @property string              $method
+ * @property string              $endpoint
+ * @property string              $params
+ * @property int|null            $response_code
+ * @property string|null         $response
  * @property \Carbon\Carbon|null $created_at
  * @property \Carbon\Carbon|null $updated_at
  */
