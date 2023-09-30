@@ -18,20 +18,28 @@ Here's a more advanced example:
 
 ```php
 ...
-use Sarahman\HttpRequestApiLog\Traits\WritesHttpLogs;
+use GuzzleHttp\Psr7\Response;
 use Illuminate\Database\Eloquent\Model;
+use Sarahman\HttpRequestApiLog\Traits\WritesHttpLogs;
 
 class ApiClient
 {
-    use LogsActivityWithPivots;
+    use WritesHttpLogs;
     ...
     ...
-
     public function __construct()
     {
         ...
         ...
-        $this->enableLogging = false;
+        $this->enableLogging = false; // Overwrite the logging functionality being enabled or not.
+    }
+    ...
+    ...
+    public function sampleMethod()
+    {
+        ...
+        ...
+        $this->log('POST', $url, $options, new Response(200));
     }
 }
 ```
@@ -44,7 +52,7 @@ You can install the package via composer:
 composer require sarahman/laravel-http-request-api-log
 ```
 
-Next, you must install the service provider:
+Next, you need to load the service provider:
 
 ```php
 // app/config/app.php
@@ -90,7 +98,7 @@ return [
 ];
 ```
 
-You can publish the migration with:
+You can also publish the migration with:
 
 ```bash
 php artisan migrate:publish sarahman/laravel-http-request-api-log
@@ -102,18 +110,24 @@ Now, you can create the `_api_calls` table by running the migrations:
 php artisan migrate
 ```
 
-**N.B.:** You can disable the api logging to a specific api client using the `enableLogging` property.
+**N.B.:** You can disable the api logging to a specific api client using the `enableLogging` property setting as false.
 
 ## Testing
 
+You might go to the project directory and run the following command to run test code.
+
 ``` bash
-$ composer test
+composer test
 ```
 
-## Security
+## Contribution
 
-If you discover any security related issues, please email to this <aabid048@gmail.com> address instead of using the issue tracker.
+Feel free to contribute in this library. Please make your changes and send us [pull requests](https://github.com/sarahman/sms-service-with-bd-providers/pulls).
+
+## Security Issues
+
+If you discover any security related issues, please feel free to create an issue in the [issue tracker](https://github.com/sarahman/laravel-http-request-api-log/issues) or write us at [aabid048@gmail.com](mailto:aabid048@gmail.com).
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
