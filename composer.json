@@ -3,7 +3,7 @@
     "description": "This library stores the http request api log into a database table.",
     "keywords": ["http", "api", "request", "log", "framework", "laravel", "lumen"],
     "type": "library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -15,9 +15,9 @@
     ],
     "require": {
         "php": ">=5.5",
-        "illuminate/database": "^4.0",
-        "illuminate/support": "^4.0",
-        "psr/http-message": "~1.0"
+        "illuminate/database": ">=4.0",
+        "illuminate/support": ">=4.0",
+        "psr/http-message": "~1.0 || ^2.0"
     },
     "require-dev": {
         "ext-json": "*",
