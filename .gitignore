@@ -1,5 +1,37 @@
-/vendor
-/.idea
-/.vscode
+coverage/
+vendor/
+node_modules/
+coverage.xml
+npm-debug.log
+phpunit.xml
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
 composer.lock
+composer.phar
+storage/*.key
 .env
+
+# IDE and Platform Tools
+.DS_Store
+Homestead.yaml
+Homestead.json
+*.iml
+*.phpunit.result.cache
+.idea
+.vagrant
+.vscode
+.phpunit.result.cache
+.php-cs-fixer.php
+.php-cs-fixer.cache
