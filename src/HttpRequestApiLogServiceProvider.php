@@ -15,7 +15,7 @@ class HttpRequestApiLogServiceProvider extends ServiceProvider
     protected $defer = false;
 
     /**
-     * Actual provider
+     * Actual provider based on Laravel version.
      *
      * @var \Illuminate\Support\ServiceProvider
      */
@@ -24,7 +24,8 @@ class HttpRequestApiLogServiceProvider extends ServiceProvider
     /**
      * Create a new service provider instance.
      *
-     * @param  \Illuminate\Contracts\Foundation\Application  $app
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
      * @return void
      */
     public function __construct($app)
@@ -57,7 +58,7 @@ class HttpRequestApiLogServiceProvider extends ServiceProvider
     }
 
     /**
-     * Return ServiceProvider according to Laravel version
+     * Return ServiceProvider according to Laravel version.
      *
      * @return \Illuminate\Support\ServiceProvider
      */
