@@ -5,6 +5,8 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sarahman/laravel-http-request-api-log/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sarahman/laravel-http-request-api-log/?branch=master)
 [![StyleCI](https://styleci.io/repos/686139900/shield)](https://styleci.io/repos/686139900)
 [![Total Downloads](https://img.shields.io/packagist/dt/sarahman/laravel-http-request-api-log.svg?style=flat-square)](https://packagist.org/packages/sarahman/laravel-http-request-api-log)
+[![License](http://poser.pugx.org/sarahman/laravel-http-request-api-log/license)](https://packagist.org/packages/sarahman/laravel-http-request-api-log)
+[![PHP Version Require](http://poser.pugx.org/sarahman/laravel-http-request-api-log/require/php)](https://packagist.org/packages/sarahman/laravel-http-request-api-log)
 
 The `sarahman/laravel-http-request-api-log` package provides easy to use functionality to log the http api logs in  the `Laravel` application. All the api logs will be stored in the `_api_calls` table.
 
