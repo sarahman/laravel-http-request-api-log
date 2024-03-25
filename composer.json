@@ -3,7 +3,7 @@
     "description": "This library stores the http request api log into a database table.",
     "keywords": ["http", "api", "request", "log", "framework", "laravel", "lumen"],
     "type": "library",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,

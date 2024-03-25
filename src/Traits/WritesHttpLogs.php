@@ -10,7 +10,7 @@ trait WritesHttpLogs
 {
     use RemovesUnwantedParams;
 
-    private $enableLogging = true;
+    protected $enableLogging = true;
 
     /**
      * Write HTTP log to the database.
