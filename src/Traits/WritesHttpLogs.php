@@ -2,8 +2,8 @@
 
 namespace Sarahman\HttpRequestApiLog\Traits;
 
-use Illuminate\Support\Facades\Config;
 use Psr\Http\Message\ResponseInterface;
+use Sarahman\HttpRequestApiLog\Helper;
 use Sarahman\HttpRequestApiLog\Models\ApiLog;
 
 trait WritesHttpLogs
@@ -22,7 +22,7 @@ trait WritesHttpLogs
      */
     final protected function log($method, $endpoint, $params, ResponseInterface $response)
     {
-        if (!($this->enableLogging && Config::get('laravel-http-request-api-log::config.enabled', true))) {
+        if (!($this->enableLogging && Helper::getConfig('enabled', true))) {
             return;
         }
 

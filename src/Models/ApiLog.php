@@ -3,7 +3,7 @@
 namespace Sarahman\HttpRequestApiLog\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Config;
+use Sarahman\HttpRequestApiLog\Helper;
 
 /**
  * This model deals with Http API calls logging.
@@ -27,7 +27,7 @@ class ApiLog extends Model
 
     public function __construct(array $attributes = [])
     {
-        $config = Config::get('laravel-http-request-api-log::config');
+        $config = Helper::getConfig();
 
         isset($this->connection) || $this->setConnection($config['database_connection']);
         isset($this->table) || $this->setTable($config['table_name']);

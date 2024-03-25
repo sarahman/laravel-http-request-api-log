@@ -2,14 +2,14 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
+use Sarahman\HttpRequestApiLog\Helper;
 
 class CreateApiLogTable extends Migration
 {
     public function up()
     {
-        $config = Config::get('laravel-http-request-api-log::config');
+        $config = Helper::getConfig();
 
         Schema::connection($config['database_connection'])->create($config['table_name'], function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -26,7 +26,7 @@ class CreateApiLogTable extends Migration
 
     public function down()
     {
-        $config = Config::get('laravel-http-request-api-log::config');
+        $config = Helper::getConfig();
 
         Schema::connection($config['database_connection'])->dropIfExists($config['table_name']);
     }
